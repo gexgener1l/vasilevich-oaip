@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main2() {
 	int a[100],n,b[100],v,p;
 	printf("enter size of the array,");
 	scanf_s("%i", &n);
@@ -10,7 +10,7 @@ int main() {
 	switch (p) {
 	case 1:
 		for (int i = 0; i < n; i++) {
-			a[i] = (rand());
+			a[i] = (rand()%100-50);
 			printf("the %dth element of array is %d\n", i, a[i]);
 		}
 		break;
@@ -25,7 +25,7 @@ int main() {
 	}
 	printf("second array:");
 	for (int c = 0,v=0; c < n; c++) {
-		if (a[c] % 2 == 1) {
+		if (a[c] % 2 == 1 || a[c] % 2 == -1) {
 			b[v]=a[c];
 			printf("%i, ",b[v]);
 			v++;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main1() {
+int main3() {
 	int min, max;
 	int a[100], i, mn = 0, mx = 0, m = 1,sum = 0,n,p;
 	printf("enter size of the array");

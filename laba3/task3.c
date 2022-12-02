@@ -11,7 +11,7 @@ int main()
     switch (p) {
     case 1:
         for (int i = 0; i < n; i++) {
-            a[i] = (rand());
+            a[i] = (rand()%100-50);
             printf("the %dth element of array is %d\n", i, a[i]);
         }
         break;
